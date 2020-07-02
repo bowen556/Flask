@@ -79,6 +79,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'STS',
+		'Username':'cosmos-new' ,
+        'PrimaryConnection':'mongodb://cosmos-new:tyqwo63S2c2SoKmuz6pyFeRm5qO00QPWogDke9E9yY1qEwQ0YeojJY9yKOwtZ1BziV1yTlGEKqXfkBTrdgXD6w==@cosmos-new.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cosmos-new@',
+    }   'Password':'tyqwo63S2c2SoKmuz6pyFeRm5qO00QPWogDke9E9yY1qEwQ0YeojJY9yKOwtZ1BziV1yTlGEKqXfkBTrdgXD6w==',
     }
 }
 
