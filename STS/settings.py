@@ -25,7 +25,7 @@ SECRET_KEY = '%9wc_*4mmq=9af=2zw9e0*--9290p!j2(ds-nuohb8hm3nzju9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['new-sts.azurewebsites.net']
 
 
 # Application definition
@@ -78,10 +78,11 @@ WSGI_APPLICATION = 'STS.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'STS',
-		'Username':'cosmos-new' ,
-        'PrimaryConnection':'mongodb://cosmos-new:tyqwo63S2c2SoKmuz6pyFeRm5qO00QPWogDke9E9yY1qEwQ0YeojJY9yKOwtZ1BziV1yTlGEKqXfkBTrdgXD6w==@cosmos-new.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cosmos-new@',
-    }   'Password':'tyqwo63S2c2SoKmuz6pyFeRm5qO00QPWogDke9E9yY1qEwQ0YeojJY9yKOwtZ1BziV1yTlGEKqXfkBTrdgXD6w==',
+        'NAME': 'database',
+		'USERNAME':'cosmos-new' ,
+        'HOST':'mongodb://cosmos-new:tyqwo63S2c2SoKmuz6pyFeRm5qO00QPWogDke9E9yY1qEwQ0YeojJY9yKOwtZ1BziV1yTlGEKqXfkBTrdgXD6w==@cosmos-new.mongo.cosmos.azure.com:10255/database?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cosmos-new@',
+        'PASSWORD':'tyqwo63S2c2SoKmuz6pyFeRm5qO00QPWogDke9E9yY1qEwQ0YeojJY9yKOwtZ1BziV1yTlGEKqXfkBTrdgXD6w==',
+        'SSL' : 'true',
     }
 }
 
